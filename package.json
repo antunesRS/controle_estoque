@@ -1,0 +1,26 @@
+{
+  "name": "controle_estoque_api",
+  "version": "1.0.0",
+  "description": "Api do sistema de controle de estoque",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antunesRS/controle_estoque.git"
+  },
+  "keywords": [
+    "estoque"
+  ],
+  "author": "Raphael Antunes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antunesRS/controle_estoque/issues"
+  },
+  "homepage": "https://github.com/antunesRS/controle_estoque#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
