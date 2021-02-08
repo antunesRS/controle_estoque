@@ -1,6 +1,6 @@
 class HomeController{
     async index(req,res){
-        res.send("TESTANDO")
+        res.json({resposta: "TESTANDO"})
     }
 }
 
