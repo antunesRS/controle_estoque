@@ -5,12 +5,12 @@ const auth = require("../auth/auth")
 var HomeController = require("../controllers/HomeController")
 var AuthController = require("../controllers/AuthController")
 var LoginController = require("../controllers/LoginController")
-var ProductController = require("../controllers/ProductController")
+var TaskController = require("../controllers/TaskController")
 
 router.post("/user", LoginController.create)
 router.post("/auth", AuthController.doLogin)
-router.post("/products/create", auth, ProductController.create)
-router.get("/products", auth, ProductController.getAll)
+router.post("/tasks/create", auth, TaskController.create)
+router.get("/tasks", auth, TaskController.getAll)
 router.get("/", HomeController.index)
 
 module.exports = router

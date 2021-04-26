@@ -5,7 +5,7 @@ const saltRounds = 10;
 class LoginController{
     
     async create(req, res){
-        var {email, password} = req.body
+        var {name, email, password} = req.body
 
         bcrypt.hash(password, saltRounds, (err, hash) => {
             
@@ -14,7 +14,7 @@ class LoginController{
                 res.status(500)
                 res.json({erro: err})
             }
-            Users.create({email, password: hash}).then((user) => {
+            Users.create({name, email, password: hash}).then((user) => {
                 res.status(201)
                 res.json(user)
             }).catch(err => {

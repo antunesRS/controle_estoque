@@ -5,6 +5,7 @@ const JWTSecret = "k5XX5dtHl2jJqm48c83mq0EG53mzHLrrR65TuVVNuTSR1RdMmyJaKGTlWsxr8
 
 class AuthController{
     async doLogin(req,res){
+        console.log(req)
 
         var {email, password} = req.body;
 
